@@ -1,0 +1,262 @@
+@import url(/css/styles.css);
+@import url(/css/beneficios.css);
+
+:root {
+    /* Cores: */
+    --azul-escuro: #08005E;
+    --azul-escuro-2: #040031;
+    --azul-claro: #1C208C;
+    --azul-claro-2: #5667FF;
+    --azul-claro-3: #acb4ff;
+    --azul-claro-4: #8692ff;
+    --azul-claro-5: #ebebff;
+    --laranja: #FF4F26;
+    --laranja-escuro: #db310a;
+    --laranja-escuro-2: #b62302;
+    --preto: #1D2329;
+    --preto-2: #000000;
+    --branco: #ffffff;
+    --branco-transparente: #e1e1ff3d;
+    --cinza-claro: #e3e4e5;
+    --cinza-escuro: #DCDFE3;
+    --cinza-escuro-2: #bfc2c6;
+    --cinza-escuro-3: rgb(129, 129, 129);
+
+    /* Tamanhos de fontes: */
+    --cabecalho-rodape-observacoes: .75rem;
+    --valor-plano: 7rem;
+    --titulo: 4rem;
+    --subtitulo-3: 2.5rem;
+    --subtitulo-2: 2rem;
+    --subtitulo: 1.5rem;
+    --paragrafo: 1rem;
+}
+
+.chamada-contato {
+    margin: 6rem 0 4rem 0;
+}
+
+.chamada-contato-conteudo {
+    width: 1696px;
+    max-width: 1920px;
+    height: 500px;
+    background-image: url(/img/capa-apontandoFrente.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    border-radius: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.contato {
+    margin-bottom: 6rem;
+    width: 100vw;
+    height: 1100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+}
+
+.icones {
+    width: 500px;
+    height: 950px;
+    background-color: var(--cinza-claro);
+    border-radius: 25px;
+    padding: 2rem;
+}
+
+.icones-conteudo {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.icones-conteudo-itens {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.icones-conteudo-itens-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: .5rem;
+}
+
+.icones-conteudo-icone a {
+    background-color: var(--azul-claro-5);
+    border: 1px solid var(--azul-claro);
+    border-radius: 100%;
+    padding: 1.5rem;
+    display: flex;
+    justify-items: center;
+    align-items: center;
+}
+
+.icones-conteudo-itens-item p {
+    font-size: var(--paragrafo);
+    text-transform: uppercase;
+    font-weight: 700;
+    color: var(--cinza-escuro-3);
+}
+
+.icones-conteudo-numeros {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    gap: 2rem;
+}
+
+.icones-conteudo-numeros h2 {
+    font-size: var(--subtitulo);
+    color: var(--preto);
+    font-weight: 700;
+}
+
+.formularios {
+    height: 950px;
+    width: 800px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.formularios-conteudo-reativacao {
+    width: 800px;
+    height: 300px;
+    background-color: var(--cinza-claro);
+    border-radius: 25px;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    color: var(--preto);
+}
+
+.formularios-conteudo-reativacao h2,
+.formularios-conteudo-mensagem h2 {
+    font-size: var(--subtitulo);
+    text-transform: uppercase;
+    font-weight: 700;
+    color: var(--azul-claro);
+}
+
+.formularios-conteudo-reativacao p {
+    font-size: var(--paragrafo);
+}
+
+.formularios-conteudo-reativacao form label {
+    font-size: var(--paragrafo);
+    font-weight: 700;
+}
+
+.input-documento {
+    border: 1px solid var(--preto);
+    border-radius: 10px;
+    background-color: var(--azul-claro-5);
+    padding: .8rem;
+    width: 20rem;
+    height: 3rem;
+    color: var(--azul-claro);
+    font-size: var(--paragrafo);
+    font-weight: 400;
+}
+
+.input-documento:focus,
+.form-nome-completo:focus,
+.form-assunto:focus,
+.form-telefone:focus,
+.form-email:focus,
+.form-cep:focus,
+.readonly-input:focus,
+.form-mensagem:focus {
+    outline: none;
+}
+
+.input-enviar,
+.form-enviar {
+    padding: .5rem;
+    width: 7rem;
+    height: 3rem;
+    background-color: var(--azul-claro);
+    color: var(--branco);
+    text-transform: uppercase;
+    border: none;
+    border-radius: 10px;
+    transition: .4s ease-in-out;
+}
+
+.input-enviar:hover,
+.form-enviar:hover {
+    background-color: var(--azul-escuro);
+}
+
+.formularios-conteudo-mensagem {
+    width: 800px;
+    height: 600px;
+    background-color: var(--cinza-claro);
+    border-radius: 25px;
+    padding: 2rem;
+    color: var(--preto);
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: space-evenly;
+}
+
+.formularios-conteudo-mensagem form {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 1rem;
+}
+
+.form-nome-completo,
+.form-assunto,
+.form-telefone,
+.form-email,
+.form-cep,
+.readonly-input,
+.form-mensagem {
+    border: 1px solid var(--preto);
+    border-radius: 10px;
+    background-color: var(--azul-claro-5);
+    padding: .8rem;
+    width: 20rem;
+    height: 3rem;
+    color: var(--azul-claro);
+    font-size: var(--paragrafo);
+    font-weight: 400;
+}
+
+.form-cep {
+    width: 10rem;
+}
+
+.readonly-input {
+    width: 14rem;
+}
+
+.readonly-input {
+    background-color: var(--cinza-escuro-2);
+    color: var(--preto-2);
+    cursor: not-allowed;
+}
+
+.form-assunto {
+    cursor: pointer;
+}
+
+.form-mensagem {
+    width: 40rem;
+    height: 12rem;
+    resize: none;
+}

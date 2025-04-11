@@ -1,0 +1,352 @@
+@import url(/css/home.css);
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Raleway', sans-serif;
+    user-select: none;
+}
+
+:root {
+    /* Cores: */
+    --azul-escuro: #08005E;
+    --azul-escuro-2: #040031;
+    --azul-claro: #1C208C;
+    --azul-claro-2: #5667FF;
+    --azul-claro-3: #acb4ff;
+    --azul-claro-4: #8692ff;
+    --laranja: #FF4F26;
+    --laranja-escuro: #db310a;
+    --laranja-escuro-2: #b62302;
+    --preto: #1D2329;
+    --preto-2: #000000;
+    --branco: #ffffff;
+    --branco-transparente: #e1e1ff3d;
+    --cinza-claro: #e3e4e5;
+    --cinza-escuro: #DCDFE3;
+    --cinza-escuro-2: #bfc2c6;
+    --cinza-escuro-3: rgb(129, 129, 129);
+
+    /* Tamanhos de fontes: */
+    --cabecalho-rodape-observacoes: .75rem;
+    --valor-plano: 7rem;
+    --titulo: 4rem;
+    --subtitulo-3: 2.5rem;
+    --subtitulo-2: 2rem;
+    --subtitulo: 1.5rem;
+    --paragrafo: 1rem;
+}
+
+.planos-radio {
+    height: 1000px;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    margin: 0 0 2rem 0;
+}
+
+.planos-radio-conteudo {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 13rem;
+    top: 5%;
+}
+
+.planos-radio-conteudo-chamada {
+    height: 750px;
+    width: 1696px;
+    max-width: 1920px;
+    border-radius: 25px;
+    background-color: var(--laranja);
+    color: var(--branco);
+    display: flex;
+    padding: 5rem 7rem 0 7rem;
+    justify-content: space-evenly;
+    align-items: flex-start;
+}
+
+.planos-radio-conteudo-chamada h2 {
+    font-size: var(--titulo);
+    font-weight: 700;
+}
+
+.planos-radio-conteudo-chamada-texto {
+    display: flex;
+    flex-direction: column;
+}
+
+.planos-radio-conteudo-chamada h3 {
+    font-size: var(--subtitulo);
+    font-weight: 700;
+}
+
+.planos-radio-conteudo-chamada p {
+    font-size: var(--cabecalho-rodape-observacoes);
+    font-weight: 400;
+}
+
+.planos-radio-conteudo-cards {
+    padding: 2rem 4rem;
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    position: absolute;
+    top: 30%;
+    width: 100vw;
+    max-width: 1920px;
+}
+
+.planos-radio-conteudo-cards-card {
+    height: 600px;
+    width: 400px;
+    background-color: var(--cinza-claro);
+    border-radius: 25px;
+}
+
+.planos-radio-conteudo-cards-card-velocidade {
+    background-color: var(--azul-claro);
+    height: 100px;
+    padding: 1rem 3rem;
+    border-radius: 25px 25px 0 0;
+    border-bottom: 1px solid var(--azul-claro-2);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: var(--branco);
+}
+
+.planos-radio-conteudo-cards-card-velocidade-velocidadeMaisAderido {
+    position: relative;
+}
+
+.planos-radio-conteudo-cards-card-velocidade-maisAderido {
+    background-color: var(--branco);
+    color: var(--azul-claro);
+    font-size: var(--observacao);
+    font-weight: 700;
+    padding: .4rem;
+    height: 35px;
+    width: 140px;
+    display: flex;
+    justify-content: center;
+    border-radius: 999px;
+    position: absolute;
+    right: 10%;
+    top: 15%;
+    transform: translateY(-100%);
+}
+
+.planos-radio-conteudo-cards-card-velocidade h4 {
+    font-size: var(--paragrafo);
+    font-weight: 400;
+}
+
+.planos-radio-conteudo-cards-card-velocidade h3 {
+    font-size: var(--subtitulo-2);
+    font-weight: 700;
+}
+
+.planos-radio-conteudo-cards-card-informacoes {
+    height: 500px;
+    padding: 0 3rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    border-radius: 0 0 25px 25px;
+}
+
+.planos-radio-conteudo-cards-card-informacoes-maisAderido {
+    height: 500px;
+    background: linear-gradient(to right, var(--azul-claro), var(--azul-escuro));
+    padding: 0 3rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    border-radius: 0 0 25px 25px;
+}
+
+.planos-radio-conteudo-cards-card-informacoes-adicionais h3 {
+    font-size: var(--paragrafo);
+    font-weight: 400;
+    color: rgb(95, 95, 95);
+}
+
+.planos-radio-conteudo-cards-card-informacoes-adicionais h3 span {
+    color: var(--laranja);
+}
+
+.planos-radio-conteudo-cards-card-informacoes-maisAderido h3 {
+    font-size: var(--paragrafo);
+    font-weight: 400;
+    color: var(--azul-claro-3);
+}
+
+.planos-radio-conteudo-cards-card-informacoes-adicionais-icones {
+    display: flex;
+    gap: .4rem;
+}
+
+.planos-radio-conteudo-cards-card-informacoes-adicionais-icones-wifiPlus,
+.planos-radio-conteudo-cards-card-informacoes-adicionais-icones-wifiTurbo,
+.planos-radio-conteudo-cards-card-informacoes-adicionais-icones-clubeCerto,
+.planos-radio-conteudo-cards-card-informacoes-adicionais-icones-tocalivros,
+.planos-radio-conteudo-cards-card-informacoes-adicionais-icones-deezer {
+    height: 40px;
+    width: 40px;
+    padding: .4rem;
+    border-radius: 7px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.planos-conteudo-cards-card-informacoes-adicionais-icones-wifiPlus svg,
+.planos-conteudo-cards-card-informacoes-adicionais-icones-wifiTurbo svg,
+.planos-conteudo-cards-card-informacoes-adicionais-icones-clubeCerto img,
+.planos-conteudo-cards-card-informacoes-adicionais-icones-deezer {
+    height: cover;
+}
+
+.planos-conteudo-cards-card-informacoes-adicionais-icones-tocalivros img {
+    height: 30px;
+}
+
+.planos-radio-conteudo-cards-card-informacoes-adicionais-icones-wifiPlus {
+    background-color: var(--azul-claro-3);
+}
+
+.planos-radio-conteudo-cards-card-informacoes-adicionais-icones-wifiTurbo {
+    background-color: var(--laranja);
+}
+
+.planos-radio-conteudo-cards-card-informacoes-adicionais-icones-clubeCerto {
+    background-color: #056d0e;
+}
+
+.planos-radio-conteudo-cards-card-informacoes-adicionais-icones-tocalivros {
+    background-color: var(--branco);
+}
+
+.planos-radio-conteudo-cards-card-informacoes-adicionais-icones-deezer {
+    background-color: #fcff49;
+}
+
+.planos-radio-conteudo-cards-card-informacoes-valor {
+    height: 150px;
+    padding-bottom: 1.5rem;
+    display: flex;
+    align-items: center;
+    border-top: 1px solid var(--cinza-escuro-3);
+    border-bottom: 1px solid var(--cinza-escuro-3);
+}
+
+.planos-radio-conteudo-cards-card-informacoes-valor-maisAderido {
+    border-top: 1px solid var(--azul-claro-2);
+    border-bottom: 1px solid var(--azul-claro-2);
+}
+
+.planos-radio-conteudo-cards-card-informacoes-valor h2 {
+    font-size: var(--valor-plano);
+    font-weight: 700;
+}
+
+.planos-radio-conteudo-cards-card-informacoes-valor-maisAderido h2 {
+    color: var(--branco);
+}
+
+.planos-radio-conteudo-cards-card-informacoes-valor small {
+    font-size: var(--subtitulo-2);
+}
+
+.planos-radio-conteudo-cards-card-informacoes a {
+    background-color: var(--laranja);
+    padding: 1rem;
+    width: 300px;
+    display: flex;
+    justify-content: center;
+    border-radius: 999px;
+    text-decoration: none;
+    font-weight: 700;
+    font-size: var(--paragrafo);
+    color: var(--branco);
+    transition: .4s;
+}
+
+.planos-radio-conteudo-cards-card-informacoes a:hover {
+    background-color: var(--laranja-escuro);
+}
+
+.duvida {
+    height: 800px;
+    width: 100vw;
+    margin: 4rem 0 6rem 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.duvida-conteudo {
+    height: 800px;
+    width: 1500px;
+    max-width: 1920px;
+    border-radius: 25px;
+    background-color: var(--azul-claro);
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.duvida-conteudo-textos {
+    width: 50rem;
+    font-weight: 400;
+    color: var(--branco);
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.duvida-conteudo-textos h2 {
+    font-size: var(--titulo);
+    font-weight: 700;
+}
+
+.duvida-conteudo-textos p {
+    font-size: var(--subtitulo);
+}
+
+.duvida-conteudo-cards {
+    display: flex;
+    gap: 1rem;
+}
+
+.duvida-conteudo-cards-grupo {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.duvida-conteudo-cards-card {
+    text-decoration: none;
+    padding: 2rem;
+    background-color: var(--azul-escuro);
+    border-radius: 25px;
+    height: 230px;
+    width: 230px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: start;
+    transition: .4s ease-in-out;
+}
+
+.duvida-conteudo-cards-card:hover {
+    background-color: var(--azul-escuro-2);
+}
+
+.duvida-conteudo-cards a h3 {
+    font-size: var(--paragrafo);
+    color: var(--branco);
+}

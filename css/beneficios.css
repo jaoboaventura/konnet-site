@@ -1,0 +1,149 @@
+@import url(/css/home.css);
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Raleway', sans-serif;
+    user-select: none;
+}
+
+:root {
+    /* Cores: */
+    --azul-escuro: #08005E;
+    --azul-escuro-2: #040031;
+    --azul-claro: #1C208C;
+    --azul-claro-2: #5667FF;
+    --azul-claro-3: #acb4ff;
+    --azul-claro-4: #8692ff;
+    --laranja: #FF4F26;
+    --laranja-escuro: #db310a;
+    --laranja-escuro-2: #b62302;
+    --preto: #1D2329;
+    --preto-2: #000000;
+    --branco: #ffffff;
+    --branco-transparente: #e1e1ff3d;
+    --cinza-claro: #e3e4e5;
+    --cinza-escuro: #DCDFE3;
+    --cinza-escuro-2: #bfc2c6;
+    --cinza-escuro-3: rgb(129, 129, 129);
+
+    /* Tamanhos de fontes: */
+    --cabecalho-rodape-observacoes: .75rem;
+    --valor-plano: 7rem;
+    --titulo: 4rem;
+    --subtitulo-3: 2.5rem;
+    --subtitulo-2: 2rem;
+    --subtitulo: 1.5rem;
+    --paragrafo: 1rem;
+}
+
+.chamada-beneficios {
+    margin: 4rem 0;
+}
+
+.chamada-beneficios-conteudo {
+    width: 1696px;
+    max-width: 1920px;
+    height: 500px;
+    background-image: url(/img/capa-coracao.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    border-radius: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.chamada-beneficios-conteudo-textos {
+    padding: 0 8rem 0 50rem;
+    color: var(--branco);
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.chamada-beneficios-conteudo-textos h2 {
+    font-size: var(--subtitulo-3);
+    font-weight: 700;
+}
+
+.chamada-beneficios-conteudo-textos h3 {
+    font-size: var(--subtitulo);
+}
+
+.chamada-beneficios-conteudo-textos p {
+    font-size: var(--paragrafo);
+}
+
+.vantagens-beneficios {
+    margin: 4rem 0 8rem 0;
+}
+
+.vantagens-beneficios-conteudo {
+    width: 1600px;
+    max-width: 1920px;
+    height: 850px;
+    background-color: var(--laranja);
+    color: var(--branco);
+    border-radius: 25px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.vantagens-beneficios-conteudo-titulo {
+    display: flex;
+    flex-direction: column;
+}
+
+.vantagens-beneficios-conteudo-titulo h2 {
+    font-size: var(--subtitulo-3);
+    font-weight: 700;
+}
+
+.vantagens-beneficios-conteudo-titulo h3 {
+    font-size: var(--subtitulo);
+    text-transform: uppercase;
+}
+
+.vantagens-beneficios-conteudo a {
+    font-size: var(--paragrafo);
+    color: var(--branco);
+    font-weight: 700;
+}
+
+
+.vantagens-beneficios-conteudo-itens {
+    display: flex;
+    gap: 2rem;
+}
+
+.vantagens-beneficios-conteudo-itens-item {
+    background-color: var(--laranja-escuro);
+    border-radius: 25px;
+    height: 450px;
+    width: 350px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    padding: 4rem 2rem;
+    gap: 2rem;
+    transition: .4s ease-in-out;
+}
+
+.vantagens-beneficios-conteudo-itens-item:hover {
+    transform: scale(1.1);
+    background-color: var(--laranja-escuro-2);
+}
+
+.vantagens-beneficios-conteudo-itens-item h3 {
+    font-size: var(--subtitulo);
+    font-weight: 700;
+}
+
+.vantagens-beneficios-conteudo-itens-item p {
+    font-size: var(--paragrafo);
+}
