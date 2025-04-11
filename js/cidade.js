@@ -52,9 +52,9 @@ document.addEventListener('DOMContentLoaded', function () {
                 link.textContent = result.nome;
     
                 if (result.tipoConexao === "Fibra Óptica") {
-                    link.href = '/ofertas-fibra/home-fibra.html';
+                    link.href = '/pages/ofertas-fibra/home-fibra.html';
                 } else {
-                    link.href = '/ofertas-radio/home-radio.html';
+                    link.href = '/pages/ofertas-radio/home-radio.html';
                 }
     
                 link.addEventListener('click', function () {
